@@ -1,0 +1,37 @@
+.right {
+  color: #f00;
+}
+.navbar {
+  .collapse {
+    position: absolute;
+    width: 100% !important;
+    height: 50px !important;
+    background-color: #01b2aa;
+    transition: 0 !important;
+    &.show {
+      width: 100% !important;
+      height: 50px !important;
+      display: block;
+      z-index: 10;
+    }
+  }
+}
+.nav-scroller {
+  background: #fff;
+  .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    //border-top: 1px solid rgba($color: #000000, $alpha: 0.075);
+    overflow: hidden;
+    overflow-x: auto;
+    padding-bottom: 1px;
+    .nav-link {
+      margin-right: 30px;
+      font-weight: 500;
+      //color: var(--bs-body);
+    }
+    .ms-auto {
+      margin-right: 0;
+    }
+  }
+}
